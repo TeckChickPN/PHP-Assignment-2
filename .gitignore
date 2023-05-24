@@ -1,25 +1,16 @@
-# CakePHP 3
+<?php
+// Function to print the multiplication table
+function printMultiplicationTable($number) {
+    for ($i = 1; $i <= 10; $i++) {
+        $result = $number * $i;
+        echo $number . ' x ' . $i . ' = ' . $result . "\n";
+    }
+}
 
-/vendor/*
-/config/app.php
+// Example usage
+$givenNumber = 7;
+echo "Multiplication table of " . $givenNumber . ":\n";
+printMultiplicationTable($givenNumber);
+?>
 
-/tmp/cache/models/*
-!/tmp/cache/models/empty
-/tmp/cache/persistent/*
-!/tmp/cache/persistent/empty
-/tmp/cache/views/*
-!/tmp/cache/views/empty
-/tmp/sessions/*
-!/tmp/sessions/empty
-/tmp/tests/*
-!/tmp/tests/empty
 
-/logs/*
-!/logs/empty
-
-# CakePHP 2
-
-/app/tmp/*
-/app/Config/core.php
-/app/Config/database.php
-/vendors/*
